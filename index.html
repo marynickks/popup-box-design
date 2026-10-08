@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <button type="submit" class="btn" onclick="openPopup()">Enviar</button>
+    <div class="popup" id="popup">
+        <img src="imagem.3/imagem.v.png" alt="Sucesso">
+        <h2>Obrigado!</h2>
+        <p>Os seus detalhes foram enviados com sucesso. Obrigado!</p>
+        <button type="button" onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+<script>
+let popup = document.getElementById("popup");
+
+function openPopup() {
+    popup.classList.add("open-popup");
+}
+
+function closePopup() {
+    popup.classList.remove("open-popup");
+}
+</script>
+
+</body>
+</html>
